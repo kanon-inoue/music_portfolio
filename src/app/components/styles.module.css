@@ -1,4 +1,12 @@
 .flippySquare {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
+}
+
+.playerWrapper {
+  background-color: #282828;
+  display: flex;
+  align-items: center;
+  width: 250px;
+  height: 250px;
 }
