@@ -19,14 +19,16 @@ export default function Album(props: Props) {
     
     <div className={styles.flippySquare} onMouseOver={() => setIsFlipped(true)} onMouseOut={() => setIsFlipped(false)}>
       <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
-        <Image
-          src={props.pic}
-          alt={props.song}
-          className="dark:invert"
-          width={250}
-          height={250}
-          priority
-        />
+        <div className={styles.imageWrapper}>
+          <Image
+            src={props.pic}
+            alt={props.song}
+            className="dark:invert"
+            priority
+            layout='fill'
+            objectFit='contain'
+          />
+        </div>
         <div className={styles.playerWrapper}>
           <iframe style={{borderRadius: "12px"}} 
             src={props.link}

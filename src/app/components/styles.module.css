@@ -1,12 +1,23 @@
 .flippySquare {
-  width: 250px;
-  height: 250px;
+  width: 10vw;
+  height: 10vw;
+  min-width: 150px;
+  min-height: 150px;
 }
 
 .playerWrapper {
-  background-color: #282828;
+  background-color: transparent;
   display: flex;
   align-items: center;
-  width: 250px;
-  height: 250px;
+  width: 10vw;
+  height: 10vw;
+  min-width: 150px;
+  min-height: 150px;
+}
+
+.imageWrapper {
+  width: 10vw;
+  height: 10vw;
+  min-width: 150px;
+  min-height: 150px;
 }
