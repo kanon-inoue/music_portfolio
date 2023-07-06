@@ -21,7 +21,7 @@ export default function Album(props: Props) {
       <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
         <Image
           src={props.pic}
-          alt={props.song || ""}
+          alt={props.song}
           className="dark:invert"
           width={250}
           height={250}
